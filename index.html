@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Speech to Text DNA</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>🎙️ Speech to Text — DNA</h1>
+      <p class="subtitle">Click <strong>Start</strong> and speak — transcription appears live.</p>
+
+      <div class="controls">
+        <button id="startBtn" class="btn primary">⏺ Start</button>
+        <button id="stopBtn" class="btn">⏹ Stop</button>
+        <button id="clearBtn" class="btn ghost">✖ Clear</button>
+      </div>
+
+      <div class="status" id="status">Status: Idle</div>
+
+      <label for="output" class="label">Transcribed Text</label>
+      <textarea id="output" readonly placeholder="Your speech will appear here..."></textarea>
+
+      <div class="actions">
+        <button id="copyBtn" class="btn">📋 Copy Text</button>
+        <a id="downloadBtn" class="btn ghost" href="#" download="transcription.txt">⬇️ Download</a>
+      </div>
+
+      <footer>
+        <small>Made for DNA project • Uses browser Web Speech API • Works in Chrome/Edge</small>
+      </footer>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
